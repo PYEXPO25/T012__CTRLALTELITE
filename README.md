@@ -1,6 +1,6 @@
 # T012__CTRLALTELITE
 
-![PyExpo Logo](pyexpo.png)
+![PyExpo Logo](Images/pyexpo.png.png)
 
 ---
 
@@ -39,7 +39,7 @@ Team ID – T012
 - ANUSHRI THIRUMAVALAVAN - DATABASE & BACK-END DEVELOPER 
  
 
-![Team Photo](team-photo.png)
+![Team Photo](Images/team-photo.png.jpg)
 
 ---
 
