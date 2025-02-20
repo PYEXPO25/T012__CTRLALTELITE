@@ -1,6 +1,6 @@
 # T012__CTRLALTELITE
 
-![PyExpo Logo](medium/pyexpo-logo.png)
+![PyExpo Logo](https://github.com/PYEXPO25/T012__CTRLALTELITE/blob/main/Screenshot%202025-02-20%20003814.png)
 
 ---
 
