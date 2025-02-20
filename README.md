@@ -39,18 +39,16 @@ Team ID – T012
 - ANUSHRI THIRUMAVALAVAN - DATABASE & BACK-END DEVELOPER 
  
 
-![Team Photo]("https://drive.google.com/file/d/1yw1UzC64wB7f5mhGqJRoyfR_VMBw_Egw/view?usp=sharing.png")
+![Team Photo](team-photo.png)
 
 ---
 
 ## Technical Stack
 
-List the technologies and tools used in the project. For example:
-
 - Frontend: HTML, CSS, JavaScript, ReactJS
 - Backend: Flask, Django
 - Database:  MySQL
-- Other Tools: Docker, Git, TensorFlow
+- Other Tools: Docker, Git
 
 ---
 
