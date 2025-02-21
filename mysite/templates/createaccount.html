@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Create an Account</title>
+        <style>
+            * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", "sana-serif";
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(#012840, #021826, #0F8C8C, #025959, #011C26);
+}
+
+.account {
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.account .createaccount {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 10px rgb(13, 32, 32), 0 0 20px cyan, 0 0 40px cyan;
+}
+
+.account .createaccount i {
+    align-items: center;
+    font-size: 70px;
+}
+
+.account .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input {
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    padding-inline: 15px;
+}
+
+.input-box input::placeholder {
+    color: #fff;
+    font-size: 15px;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 30%;
+    transform: scale(0.8);
+    font-size: 20px;
+    padding-right: 15px;
+    color: #fff;
+}
+
+.account .btn {
+    margin-top: 10px;
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+.account .register-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.account .register-link a {
+    color: #1abeff
+}
+        </style>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <div class = "account">
+            <form action = "">
+                <div class = "createaccount">
+                    <h1>Create an Account</h1>
+                </div>
+                <div class = "input-box">
+                    <input type = "text" placeholder = "Enter your e-mail">
+                    <i class='bx bxs-envelope'></i>
+                </div>
+                <div class = "input-box">
+                    <input type = "password" placeholder = "Create Password">
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+                <div class = "input-box">
+                    <input type = "password" placeholder = "Confirm Password">
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+                <button type = "Submit" class = "btn">Create Account</button>
+                <div class = "register-link">
+                    <p>Already have an account? 
+                        <a href="{% url 'user_login' %}">Login</a>
+                        <!-- <a href = "index.html">Login</a> -->
+                    </p>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
