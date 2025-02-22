@@ -1,4 +1,6 @@
-![PyExpo Logo](Images/pyexpo-logo.png)
+## T012 - CTRL ALT ELITE
+
+![PyExpo Logo](Images/pyexpo.png.png)
 
 ---
 
@@ -33,7 +35,7 @@ We use sensors to detect electricity. We use server to transfer the data. This a
 - *PRAVIN S* - BACK-END DEVELOPER & PAPER WORK
 - *ANUSHRI THIRUMAVALAVAN* - DATABASE & BACK-END DEVELOPER
 
-![Team Photo](media/team-photo.png)
+![Team Photo](Images/team-photo.png.jpg)
 
 ---
 
