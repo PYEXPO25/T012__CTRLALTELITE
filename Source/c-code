@@ -1,1 +1,67 @@
 
+#include <Wire.h>
+#include <LiquidCrystal_I2C.h>
+
+// Define I2C LCD (0x27 or 0x3F, check using an I2C scanner)
+LiquidCrystal_I2C lcd(0x27, 16, 2);
+
+// Sensor & Relay Pin Definitions
+#define CURRENT_SENSOR A0   // ACS712 Current Sensor
+#define VOLTAGE_SENSOR A0   // Voltage sensor (or use a divider)
+#define RELAY_PIN D7        // Relay control
+
+// Energy Calculation Variables
+float voltage = 230.0;  // Assume constant voltage (for India)
+float current = 0.0;
+float power = 0.0;
+float energy = 0.0;
+float cost = 0.0;
+float cost_per_kWh = 7.0; // Change as per your electricity rate
+
+void setup() {
+  Serial.begin(115200);
+  Wire.begin(D2, D1);  // ESP8266 I2C pins (SDA, SCL)
+  lcd.begin(16, 2);
+  lcd.backlight();
+
+  pinMode(CURRENT_SENSOR, INPUT);
+  pinMode(RELAY_PIN, OUTPUT);
+  digitalWrite(RELAY_PIN, LOW); // Relay OFF initially
+  
+  lcd.setCursor(0, 0);
+  lcd.print("Smart Energy Meter");
+  delay(2000);
+  lcd.clear();
+}
+
+void loop() {
+  // Read Current Sensor (ACS712)
+  int sensorValue = analogRead(CURRENT_SENSOR);
+  float current = (sensorValue * 3.3) / 1024.0; // Convert ADC to Voltage
+  current = (current - 2.5) / 0.185; // Convert to Amps (ACS712 5A module)
+
+  // Calculate Power & Energy
+  power = voltage * current;  // P = V x I
+  energy += power * (1.0 / 3600.0);  // Energy in kWh (Watt-hour / 1000)
+  cost = energy * cost_per_kWh; // Cost Calculation
+
+  // Display on LCD
+  lcd.clear();
+  lcd.setCursor(0, 0);
+  lcd.print("I: ");
+  lcd.print(current, 2);
+  lcd.print(" A  ");
+
+  lcd.setCursor(0, 1);
+  lcd.print("P:");
+  lcd.print(power, 1);
+  lcd.print("W E:");
+  lcd.print(energy, 2);
+  delay(2000);
+
+  lcd.clear();
+  lcd.setCursor(0, 0);
+  lcd.print("Cost: Rs.");
+  lcd.print(cost, 2);
+  delay(2000);
+}
