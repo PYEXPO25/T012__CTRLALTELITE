@@ -1,6 +1,6 @@
 ## T012 - CTRL ALT ELITE
 
-![PyExpo Logo](Images/pyexpo.png.png)
+![PyExpo Logo](media/pyexpo-logo.png)
 
 ---
 
@@ -35,7 +35,7 @@ We use sensors to detect electricity. We use server to transfer the data. This a
 - *PRAVIN S* - BACK-END DEVELOPER & PAPER WORK
 - *ANUSHRI THIRUMAVALAVAN* - DATABASE & BACK-END DEVELOPER
 
-![Team Photo](Images/team-photo.png.jpg)
+![Team Photo](media/team.jpeg)
 
 ---
 
@@ -112,10 +112,10 @@ Images to demonstrate the user interface:
 *Example pages:*
 
 1. *Landing Page:*
-   ![Landing Page Mockup](media/LoadingPage.png)
+   ![Landing Page Mockup](media/LoginPage.jpeg)
 
 2. *Dashboard:*
-   ![Dashboard Mockup](media/DashBoard.png)
+   ![Dashboard Mockup](media/DashBoard.jpeg)
 
 3. *Analytics View:*
    ![Analytics Mockup](media/Analytics.png)
