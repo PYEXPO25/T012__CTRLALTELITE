@@ -112,10 +112,10 @@ Images to demonstrate the user interface:
 *Example pages:*
 
 1. *Landing Page:*
-   ![Landing Page Mockup](media/LoginPage.jpeg)
+   ![Landing Page Mockup](media/Login-Page.jpeg)
 
 2. *Dashboard:*
-   ![Dashboard Mockup](media/DashBoard.jpeg)
+   ![Dashboard Mockup](media/Dashboard.jpeg)
 
 3. *Analytics View:*
    ![Analytics Mockup](media/Analytics.png)
