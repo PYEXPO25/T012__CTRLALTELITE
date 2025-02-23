@@ -125,12 +125,12 @@ Images to demonstrate the user interface:
 ## Resources
 
 ### 📄 PowerPoint Presentation
-[Click here to view the PPT](insert-drive-link-here)
+[Click here to view the PPT](https://1drv.ms/p/c/deb61b0a2d244268/EeEAVshuA01LmLUN6Ii1JswBpUxpuZ-I35qh_WPid3vR7Q?e=N9Mle3)
 
 ### 🎥 Project Video
 [Click here to view the project demo video](insert-drive-link-here)
 
 ### 📹 YouTube Link
-[Watch the project on YouTube](insert-youtube-link-here)
+[Watch the project on YouTube](https://youtu.be/SeG9Hd9sza8?si=FhW9ixxFTHB5o0Ld)
 
 ---
