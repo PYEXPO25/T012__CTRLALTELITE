@@ -118,7 +118,7 @@ Images to demonstrate the user interface:
    ![Dashboard Mockup](media/Dashboard.jpeg)
 
 3. *Analytics View:*
-   ![Analytics Mockup](media/Analytics.png)
+   ![Analytics Mockup](media/Overview-of-our-Web-Application.jpeg)
 
 ---
 
